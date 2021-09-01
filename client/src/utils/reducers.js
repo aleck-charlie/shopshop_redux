@@ -11,6 +11,14 @@ import {
   TOGGLE_CART,
 } from './actions';
 
+const defaultState = {
+  products: [],
+  cart: [],
+  cartOpen: false,
+  categories: [],
+  currentCategory: "",
+};
+
 export const reducer = ( state = defaultState, action) => {
   switch (action.type) {
 
